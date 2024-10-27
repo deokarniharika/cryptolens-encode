@@ -27,12 +27,12 @@ st.write("Seaborn is a Python data visualization library based on Matplotlib, pr
 st.markdown(" ##### Matplotlib")
 st.write("Matplotlib is a fundamental data visualization library in Python, providing tools to create static, animated, and interactive plots. It's highly flexible, allowing users to customize every aspect of a plot, and serves as the underlying engine for other visualization libraries like Seaborn and Pandas plotting.") 
 
-st.markdown(" ##### PLotly Express")
+st.markdown(" ##### Plotly Express")
 st.write("Plotly Express is a high-level interface for creating interactive plots with Plotly, a popular Python library for data visualization. It allows users to create a variety of visualizations easily and quickly with minimal code, making it an excellent choice for exploratory data analysis and presenting results in an interactive format.")
 
 st.markdown(" ##### Psycopg2")
 st.write("Psycopg2 is a popular PostgreSQL adapter for the Python programming language. It allows Python code to interact with PostgreSQL databases, enabling developers to execute SQL commands, manage database connections, and perform various database operations within their Python applications. Psycopg2 is known for its efficiency and is widely used in web applications, data analysis, and backend development.")
 
-st.markdown(" ##### Networkx")
+st.markdown(" ##### NetworkX")
 st.write("NetworkX is a Python library for the creation, manipulation, and study of complex networks (graphs). It provides tools to work with both undirected and directed graphs, enabling users to perform various operations and analyses on network structures. NetworkX is widely used in fields such as social network analysis, biological network modeling, and transportation systems.")
 
