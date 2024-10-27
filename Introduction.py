@@ -17,7 +17,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 zscore=0
 st.markdown("## DeFi Data Analysis")
-st.write("`Team members: Alex, Anjani, Harold, Niharika, Pakkanut- University of Bristol`")
+st.write("`Team members: Alexander Tallis, Anjani Upadhyay, Harold Robson, Niharika Deokar- University of Bristol`")
 st.write("##### DeFi")
 with st.expander("**Explanation**"):
     st.write("Decentralized Finance, or DeFi, is an ecosystem of financial applications built on blockchain networks, especially Ethereum, that aims to recreate traditional financial systems—like lending, borrowing, and trading—using decentralized technologies. DeFi operates without centralized intermediaries like banks or brokerages, instead relying on smart contracts—self-executing contracts written in code on the blockchain that automatically carry out transactions when conditions are met.")
