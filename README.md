@@ -3,8 +3,11 @@
 Hackathon- Encode London <br/>
 Track- Defi Data Analysis, Compass Labs Zone <br/>
 Project link- https://cryptolens-encode.streamlit.app/Dashboard <br/>
-Team members- Alexander Tallis, Anjani Upadhyay, Harold Robson, Niharika Deokar- University of Bristol
-(The project screenshots have been added to the file- screenshots.md)
+Team members- Alexander Tallis, Anjani Upadhyay, Harold Robson, Niharika Deokar- University of Bristol <br/>
+<br/>
+
+*(The project screenshots have been added to the file- screenshots.md)* <br/>
+*(The visualisation screenshots have been added to the file- viz.md)*
 
 For our DeFi Data Analysis project- CryptoLens, we've been granted access to a subset of the "dojo" database, featuring curated and processed smart contract data. The data primarily consists of two types: Event Data, which refers to specific events emitted by the Ethereum Virtual Machine (EVM), which developers explicitly program into smart contracts to track important actions, and Call Data, which represents the outputs from function calls on smart contracts.
 
