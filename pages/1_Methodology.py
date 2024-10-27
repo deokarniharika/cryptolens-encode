@@ -3,7 +3,7 @@ import streamlit as st
 # Define the text with a background color using HTML and CSS
 text_with_background = """
 <div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
-    <p style="color: black; font-size: 16px;">The list below includes list of different Python libraries and lists used.</p>
+    <p style="color: black; font-size: 16px;">The list below includes different Python libraries and interfaces we've utilised in our project.</p>
 </div>
 """
 
