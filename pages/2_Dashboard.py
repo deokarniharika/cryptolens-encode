@@ -69,6 +69,7 @@ df_eth_eventnames = pd.concat([above_threshold, other_row], ignore_index=True)
 fig = px.pie(df_eth_eventnames, values=df_eth_eventnames['count'], names=df_eth_eventnames['event_name'], title="Distribution of event names for Ethereum")
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
+st.write("The pie chart illustrates the distribution of different event types for Ethereum transactions. A significant portion, 64.9%, consists of "Swap" events, indicating that token exchanges dominate the transaction activity. This is followed by "ReserveDataUpdated" events at 12.5%, which likely involve updates to asset reserves, potentially related to lending or borrowing protocols. Other event types include "Supply" (4.74%), "Withdraw" (2.91%), and "ReserveUsedAsCollateralEnabled" (2.83%), highlighting common actions in decentralized finance (DeFi), such as supplying assets, withdrawals, and collateral management. Lesser, though notable, events like "Borrow," "Repay," and "Burn" reflect additional DeFi functions, while smaller segments, including "Collect," "Mint," "FlashLoan," and "Other," represent diverse but less frequent activities. This distribution indicates a strong focus on swap transactions and reserve management within the Ethereum ecosystem.")
 
 #--------------------------------
 
@@ -107,6 +108,7 @@ fig = px.pie(df_arb, values=df_arb.iloc[:,1], names=df_arb.iloc[:,0], title="Dis
 
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
+st.write("The pie chart shows the distribution of event names for Arbitrum, with Swap events comprising the largest portion at 37.8%, indicating a major focus on token exchanges within the network. Following this, OraclePriceUpdate events make up 5.12%, reflecting frequent updates in price data, which are essential for DeFi operations. PoolAmountUpdated and VirtualSwapInventoryUpdated events account for 3.75% each, suggesting significant activity in liquidity management and virtual swap handling. Other notable events, such as CumulativeBorrowingFactorUpdated (3.11%) and ClaimableFundingAmountPerSizeUpdated (3.11%), point to mechanisms for borrowing and funding adjustments. The remaining events, including "Mint," "Burn," "Collect," and "PositionImpactPoolAmountUpdated," are individually smaller but collectively contribute to diverse network functions. Overall, the chart highlights a strong emphasis on swaps, price updates, and liquidity management in Arbitrum's transaction activity.")
 
 #--------------------------------
 
@@ -152,6 +154,7 @@ filtered_df['cumulative_amount'] = filtered_df['total_amount'].cumsum()
 
 # Step 4: Plot cumulative total amount over time using Streamlit's line_chart
 st.line_chart(filtered_df.set_index('block_timestamp')['cumulative_amount'])
+st.write("This chart visualizes the cumulative total over time of cryptocurrency tokens, specifically tracking the difference between "burn" (removing tokens from circulation) and "mint" (adding tokens to circulation) events. The upward steps indicate periods where minting significantly exceeded burning, increasing the cumulative total.")
 
 #--------------------------------
 import pandas as pd
@@ -186,6 +189,8 @@ df_bore['cumulative_amount'] = df_bore['amount'].cumsum()
 
 # Step 7: Plot cumulative total amount over time using Streamlit's line_chart
 st.line_chart(df_bore.set_index('block_timestamp')['cumulative_amount'])
+
+st.write("This chart represents the cumulative total over time for cryptocurrency borrowing and repayment activities. The downward trend indicates that repayments often exceeded borrowings, decreasing the cumulative balance. Spikes and drops show fluctuations in borrowing and repayment volumes over time.")
 
 #--------------------------------
 
