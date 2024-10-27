@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import psycopg2
 import plotly.express as px
 
@@ -24,10 +23,8 @@ rows = cursor.fetchall()
 for row in rows:
     print(row)
 
-
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 query="""
 SELECT 
@@ -159,7 +156,6 @@ st.line_chart(filtered_df.set_index('block_timestamp')['cumulative_amount'])
 #--------------------------------
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 import networkx as nx
 
 st.write(f"**Cumulative total over time- difference between borrow and repay.**")
