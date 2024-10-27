@@ -22,4 +22,4 @@ This data has been displayed in the form of an interactive streamlit dashboard a
 Conclusions:<br/>
 - There was a huge increase in debt repayment on Ethereum in early August which probably came as a result of the huge Ethereum price drop.
 - The transaction data provided valuable insight into the health of DeFi markets and their structures.
-- The Ethereum showed steady inflation, whilst the Arbitrum was more volatile. 
+- Ethereum traded tokens showed steady inflation, whilst the Arbitrum was more volatile. 
