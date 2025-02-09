@@ -154,7 +154,7 @@ filtered_df['cumulative_amount'] = filtered_df['total_amount'].cumsum()
 
 # Step 4: Plot cumulative total amount over time using Streamlit's line_chart
 st.line_chart(filtered_df.set_index('block_timestamp')['cumulative_amount'])
-st.write("This chart visualizes the cumulative total over time of cryptocurrency tokens, specifically tracking the difference between "burn" (removing tokens from circulation) and "mint" (adding tokens to circulation) events. The upward steps indicate periods where minting significantly exceeded burning, increasing the cumulative total.")
+st.write("This chart visualizes the cumulative total over time of cryptocurrency tokens, specifically tracking the difference between burn (removing tokens from circulation) and mint (adding tokens to circulation) events. The upward steps indicate periods where minting significantly exceeded burning, increasing the cumulative total.")
 
 #--------------------------------
 import pandas as pd
